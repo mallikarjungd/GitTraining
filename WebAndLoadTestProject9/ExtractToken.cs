@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace WebAndLoadTestProject9
 {
-    public class ExtractToken : ExtractionRule
+    public class ExtractToken : ExtractionRule      //comments!
     {
         public override void Extract(object sender, ExtractionEventArgs e)
         {
@@ -20,7 +20,7 @@ namespace WebAndLoadTestProject9
             int firstIndex = location.IndexOf('=');
             int lastIndex = location.IndexOf("&token_type");
             string token = location.Substring(firstIndex+1, lastIndex - firstIndex-1);
-            e.WebTest.Context["BearerToken"] = token;
+            e.WebTest.Context["BearerToken"] = token; //something!
         }
     }
 }
