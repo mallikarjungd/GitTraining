@@ -1,0 +1,345 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WebTest Name="Go1" Id="6cc800d8-b61e-4cf1-a15e-54223111c514" Owner="" Priority="0" Enabled="True" CssProjectStructure="" CssIteration="" Timeout="0" WorkItemIds="" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010" Description="" CredentialUserName="" CredentialPassword="" PreAuthenticate="True" Proxy="default" StopOnError="False" RecordedResultFile="" ResultsLocale="">
+  <Items>
+    <Request Method="OPTIONS" Guid="fa8894cb-3716-4e50-a3f9-40ed0636880e" Version="1.1" Url="https://qa-in-uk-eol-ct-qrysvc.digital-online.eurofins.local/feature-guidedordering/settings/configurations" ThinkTime="0" Timeout="60" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Access-Control-Request-Method" Value="GET" />
+        <Header Name="Access-Control-Request-Headers" Value="authorization" />
+        <Header Name="Origin" Value="https://qa-in-uk-guided-ordering.digital-online.eurofins.local" />
+        <Header Name="Sec-Fetch-Mode" Value="cors" />
+        <Header Name="Sec-Fetch-Site" Value="same-site" />
+        <Header Name="Sec-Fetch-Dest" Value="empty" />
+      </Headers>
+      <QueryStringParameters>
+        <QueryStringParameter Name="configurationKeys" Value="enableTodayAsDefaultValueForDateTime" RecordedValue="" CorrelationBinding="" UrlEncode="True" UseToGroupResults="False" />
+        <QueryStringParameter Name="configurationKeys" Value="PricingAtOrderingServiceLevel" RecordedValue="" CorrelationBinding="" UrlEncode="True" UseToGroupResults="False" />
+        <QueryStringParameter Name="configurationKeys" Value="enableShipping" RecordedValue="" CorrelationBinding="" UrlEncode="True" UseToGroupResults="False" />
+        <QueryStringParameter Name="configurationKeys" Value="EnableSmartLabelPrinting" RecordedValue="" CorrelationBinding="" UrlEncode="True" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="a36def33-64e8-41e9-bf5a-3f1841af6078" Version="1.1" Url="https://inqa1-connect.eurofins.local/adfs/oauth2/authorize" ThinkTime="0" Timeout="60" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Upgrade-Insecure-Requests" Value="1" />
+        <Header Name="Sec-Fetch-Site" Value="same-site" />
+        <Header Name="Sec-Fetch-Mode" Value="navigate" />
+        <Header Name="Sec-Fetch-Dest" Value="document" />
+        <Header Name="Referer" Value="https://qa-in-uk-guided-ordering.digital-online.eurofins.local/feature-guidedordering/" />
+        <Header Name="Connection" Value="keep-alive" />
+        <Header Name="Origin" Value="https://inqa1-connect.eurofins.local" />
+        <Header Name="Host" Value="inqa1-connect.eurofins.local" />
+        <Header Name="Accept" Value="text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9" />
+        <Header Name="Accept-Encoding" Value="gzip, deflate, br" />
+        <Header Name="Accept-Language" Value="en-US,en;q=0.9" />
+        <Header Name="User-Agent" Value="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.113 Safari/537.36" />
+        <Header Name="Cookie" Value="MSISIPSelectionPersistent=RUlNQVMtSU5RQTE=; MSISLoopDetectionCookie=MjAyMC0wOS0xNzoxMjo1OToxOVpcMQ==" />
+      </Headers>
+      <QueryStringParameters>
+        <QueryStringParameter Name="response_type" Value="id_token token" RecordedValue="" CorrelationBinding="" UrlEncode="True" UseToGroupResults="False" />
+        <QueryStringParameter Name="client_id" Value="6f24d52c-98d7-4924-819d-08a8a280db9c" RecordedValue="" CorrelationBinding="" UrlEncode="True" UseToGroupResults="False" />
+        <QueryStringParameter Name="state" Value="hgElwgq3dkqLBjFA_QJ_PS_RWGladIMkIv7sSwGmkRB83" RecordedValue="" CorrelationBinding="" UrlEncode="True" UseToGroupResults="False" />
+        <QueryStringParameter Name="redirect_uri" Value="https://qa-in-uk-guided-ordering.digital-online.eurofins.local/feature-guidedordering/" RecordedValue="" CorrelationBinding="" UrlEncode="True" UseToGroupResults="False" />
+        <QueryStringParameter Name="scope" Value="openid eurofins.dop.business.inqa1-trunk eurofins.dop.resource.configuration.query eurofins.dop.resource.configuration.command eurofins.dop.resource.usermanagement.query  eurofins.dop.resource.eolct.query eurofins.dop.resource.ordering.query eurofins.dop.resource.ordering.command" RecordedValue="" CorrelationBinding="" UrlEncode="True" UseToGroupResults="False" />
+        <QueryStringParameter Name="resource" Value="https://inqa1-api.dop.eurofins.com/" RecordedValue="" CorrelationBinding="" UrlEncode="True" UseToGroupResults="False" />
+        <QueryStringParameter Name="nonce" Value="hgElwgq3dkqLBjFA_QJ_PS_RWGladIMkIv7sSwGmkRB83" RecordedValue="" CorrelationBinding="" UrlEncode="True" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="POST" Guid="30b2ad6f-c6db-4c70-87ac-5d166dd366d7" Version="1.1" Url="https://inqa1-connect.eurofins.local/adfs/oauth2/authorize" ThinkTime="0" Timeout="60" ParseDependentRequests="True" FollowRedirects="False" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Upgrade-Insecure-Requests" Value="1" />
+        <Header Name="Origin" Value="https://inqa1-connect.eurofins.local" />
+        <Header Name="Content-Type" Value="application/x-www-form-urlencoded" />
+        <Header Name="Sec-Fetch-Site" Value="same-origin" />
+        <Header Name="Sec-Fetch-Mode" Value="navigate" />
+        <Header Name="Sec-Fetch-User" Value="?1" />
+        <Header Name="Sec-Fetch-Dest" Value="document" />
+        <Header Name="Host" Value="inqa1-connect.eurofins.local" />
+        <Header Name="Connection" Value="keep-alive" />
+        <Header Name="Referer" Value="https://inqa1-connect.eurofins.local/adfs/oauth2/authorize?response_type=id_token%20token&amp;client_id=6f24d52c-98d7-4924-819d-08a8a280db9c&amp;state=hgElwgq3dkqLBjFA_QJ_PS_RWGladIMkIv7sSwGmkRB83&amp;redirect_uri=https%3A%2F%2Fqa-in-uk-guided-ordering.digital-online.eurofins.local%2Ffeature-guidedordering%2F&amp;scope=openid%20eurofins.dop.business.inqa1-trunk%20eurofins.dop.resource.configuration.query%20eurofins.dop.resource.configuration.command%20eurofins.dop.resource.usermanagement.query%20%20eurofins.dop.resource.eolct.query%20eurofins.dop.resource.ordering.query%20eurofins.dop.resource.ordering.command&amp;resource=https%3A%2F%2Finqa1-api.dop.eurofins.com%2F&amp;nonce=hgElwgq3dkqLBjFA_QJ_PS_RWGladIMkIv7sSwGmkRB83" />
+        <Header Name="Accept" Value="text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9" />
+        <Header Name="Accept-Encoding" Value="gzip, deflate, br" />
+        <Header Name="Accept-Language" Value="en-US,en;q=0.9" />
+        <Header Name="User-Agent" Value="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.113 Safari/537.36" />
+        <Header Name="Cookie" Value="MSISIPSelectionPersistent=RUlNQVMtSU5RQTE=; MSISLoopDetectionCookie=MjAyMC0wOS0xNzoxMjo1OToxOVpcMQ==" />
+      </Headers>
+      <QueryStringParameters>
+        <QueryStringParameter Name="response_type" Value="id_token token" RecordedValue="" CorrelationBinding="" UrlEncode="True" UseToGroupResults="False" />
+        <QueryStringParameter Name="client_id" Value="6f24d52c-98d7-4924-819d-08a8a280db9c" RecordedValue="" CorrelationBinding="" UrlEncode="True" UseToGroupResults="False" />
+        <QueryStringParameter Name="state" Value="hgElwgq3dkqLBjFA_QJ_PS_RWGladIMkIv7sSwGmkRB83" RecordedValue="" CorrelationBinding="" UrlEncode="True" UseToGroupResults="False" />
+        <QueryStringParameter Name="redirect_uri" Value="https://qa-in-uk-guided-ordering.digital-online.eurofins.local/feature-guidedordering/" RecordedValue="" CorrelationBinding="" UrlEncode="True" UseToGroupResults="False" />
+        <QueryStringParameter Name="scope" Value="openid eurofins.dop.business.inqa1-trunk eurofins.dop.resource.configuration.query eurofins.dop.resource.configuration.command eurofins.dop.resource.usermanagement.query  eurofins.dop.resource.eolct.query eurofins.dop.resource.ordering.query eurofins.dop.resource.ordering.command" RecordedValue="" CorrelationBinding="" UrlEncode="True" UseToGroupResults="False" />
+        <QueryStringParameter Name="resource" Value="https://inqa1-api.dop.eurofins.com/" RecordedValue="" CorrelationBinding="" UrlEncode="True" UseToGroupResults="False" />
+        <QueryStringParameter Name="nonce" Value="hgElwgq3dkqLBjFA_QJ_PS_RWGladIMkIv7sSwGmkRB83" RecordedValue="" CorrelationBinding="" UrlEncode="True" UseToGroupResults="False" />
+        <QueryStringParameter Name="client-request-id" Value="831da581-83dc-48a8-884b-0180000000ef" RecordedValue="" CorrelationBinding="" UrlEncode="True" UseToGroupResults="False" />
+      </QueryStringParameters>
+      <FormPostHttpBody>
+        <FormPostParameter Name="UserName" Value="oyo9" RecordedValue="" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="Password" Value="Welcome@123456" RecordedValue="" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="AuthMethod" Value="FormsAuthentication" RecordedValue="" CorrelationBinding="" UrlEncode="True" />
+      </FormPostHttpBody>
+    </Request>
+    <Request Method="GET" Guid="7ec7c74e-a7bf-4767-ab0c-0e33ffd2d202" Version="1.1" Url="https://inqa1-connect.eurofins.local/adfs/oauth2/authorize" ThinkTime="0" Timeout="60" ParseDependentRequests="True" FollowRedirects="False" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Upgrade-Insecure-Requests" Value="1" />
+        <Header Name="Sec-Fetch-Site" Value="same-origin" />
+        <Header Name="Sec-Fetch-Mode" Value="navigate" />
+        <Header Name="Sec-Fetch-User" Value="?1" />
+        <Header Name="Sec-Fetch-Dest" Value="document" />
+        <Header Name="Referer" Value="https://inqa1-connect.eurofins.local/adfs/oauth2/authorize?response_type=id_token%20token&amp;client_id=6f24d52c-98d7-4924-819d-08a8a280db9c&amp;state=hgElwgq3dkqLBjFA_QJ_PS_RWGladIMkIv7sSwGmkRB83&amp;redirect_uri=https%3A%2F%2Fqa-in-uk-guided-ordering.digital-online.eurofins.local%2Ffeature-guidedordering%2F&amp;scope=openid%20eurofins.dop.business.inqa1-trunk%20eurofins.dop.resource.configuration.query%20eurofins.dop.resource.configuration.command%20eurofins.dop.resource.usermanagement.query%20%20eurofins.dop.resource.eolct.query%20eurofins.dop.resource.ordering.query%20eurofins.dop.resource.ordering.command&amp;resource=https%3A%2F%2Finqa1-api.dop.eurofins.com%2F&amp;nonce=hgElwgq3dkqLBjFA_QJ_PS_RWGladIMkIv7sSwGmkRB83" />
+        <Header Name="Host" Value="inqa1-connect.eurofins.local" />
+        <Header Name="Connection" Value="keep-alive" />
+        <Header Name="Accept" Value="text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9" />
+        <Header Name="Accept-Encoding" Value="gzip, deflate, br" />
+        <Header Name="Accept-Language" Value="en-US,en;q=0.9" />
+        <Header Name="User-Agent" Value="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.113 Safari/537.36" />
+        <Header Name="Cookie" Value="MSISIPSelectionPersistent=RUlNQVMtSU5RQTE=; MSISLoopDetectionCookie=MjAyMC0wOS0xNzoxMjo1OToxOVpcMQ==; MSISAuth=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; MSISAuth1=V8lsNqcNcADFASF5egryV6+Gmor+UBy6R+IY2TbeJs6SpeIIF3kg218vGZ8CCBsYTll/7B6W7tx1hGDQ4af+nuJk3AcGYknOMuv/pjgux7A0XJ+l4oTXCyQw0DzexWJS+sp1SGlNsjfmvP4UH/xzV222ztPuuu+X9XZXDUZdDBX76jiAXJEGufossTUMq8Eao260fM959ZOXAMmPPT0irtBC/wxWAnrOf0nDpxsX744=" />
+      </Headers>
+      <ExtractionRules>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractHttpHeader, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="token" DisplayName="Extract HTTP Header" Description="Extract the value of an HTTP header and place it into the test context.">
+          <RuleParameters>
+            <RuleParameter Name="Header" Value="Location" />
+            <RuleParameter Name="Required" Value="True" />
+          </RuleParameters>
+        </ExtractionRule>
+        <ExtractionRule Classname="WebAndLoadTestProject9.ExtractToken, WebAndLoadTestProject9, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" VariableName="someToken" DisplayName="ExtractToken" Description="" />
+      </ExtractionRules>
+      <QueryStringParameters>
+        <QueryStringParameter Name="response_type" Value="id_token token" RecordedValue="" CorrelationBinding="" UrlEncode="True" UseToGroupResults="False" />
+        <QueryStringParameter Name="client_id" Value="6f24d52c-98d7-4924-819d-08a8a280db9c" RecordedValue="" CorrelationBinding="" UrlEncode="True" UseToGroupResults="False" />
+        <QueryStringParameter Name="state" Value="hgElwgq3dkqLBjFA_QJ_PS_RWGladIMkIv7sSwGmkRB83" RecordedValue="" CorrelationBinding="" UrlEncode="True" UseToGroupResults="False" />
+        <QueryStringParameter Name="redirect_uri" Value="https://qa-in-uk-guided-ordering.digital-online.eurofins.local/feature-guidedordering/" RecordedValue="" CorrelationBinding="" UrlEncode="True" UseToGroupResults="False" />
+        <QueryStringParameter Name="scope" Value="openid eurofins.dop.business.inqa1-trunk eurofins.dop.resource.configuration.query eurofins.dop.resource.configuration.command eurofins.dop.resource.usermanagement.query  eurofins.dop.resource.eolct.query eurofins.dop.resource.ordering.query eurofins.dop.resource.ordering.command" RecordedValue="" CorrelationBinding="" UrlEncode="True" UseToGroupResults="False" />
+        <QueryStringParameter Name="resource" Value="https://inqa1-api.dop.eurofins.com/" RecordedValue="" CorrelationBinding="" UrlEncode="True" UseToGroupResults="False" />
+        <QueryStringParameter Name="nonce" Value="hgElwgq3dkqLBjFA_QJ_PS_RWGladIMkIv7sSwGmkRB83" RecordedValue="" CorrelationBinding="" UrlEncode="True" UseToGroupResults="False" />
+        <QueryStringParameter Name="client-request-id" Value="831da581-83dc-48a8-884b-0180000000ef" RecordedValue="" CorrelationBinding="" UrlEncode="True" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="OPTIONS" Guid="43e9e87c-c7ae-4557-8a9d-2ab78a305148" Version="1.1" Url="https://qa-in-uk-eol-ct-qrysvc.digital-online.eurofins.local/feature-guidedordering/settings/configurations" ThinkTime="0" Timeout="60" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Access-Control-Request-Method" Value="GET" />
+        <Header Name="Access-Control-Request-Headers" Value="authorization" />
+        <Header Name="Origin" Value="https://qa-in-uk-guided-ordering.digital-online.eurofins.local" />
+        <Header Name="Sec-Fetch-Mode" Value="cors" />
+        <Header Name="Sec-Fetch-Site" Value="same-site" />
+        <Header Name="Sec-Fetch-Dest" Value="empty" />
+      </Headers>
+      <QueryStringParameters>
+        <QueryStringParameter Name="configurationKeys" Value="enableTodayAsDefaultValueForDateTime" RecordedValue="" CorrelationBinding="" UrlEncode="True" UseToGroupResults="False" />
+        <QueryStringParameter Name="configurationKeys" Value="PricingAtOrderingServiceLevel" RecordedValue="" CorrelationBinding="" UrlEncode="True" UseToGroupResults="False" />
+        <QueryStringParameter Name="configurationKeys" Value="enableShipping" RecordedValue="" CorrelationBinding="" UrlEncode="True" UseToGroupResults="False" />
+        <QueryStringParameter Name="configurationKeys" Value="EnableSmartLabelPrinting" RecordedValue="" CorrelationBinding="" UrlEncode="True" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="7c4c4f78-0bb7-49db-af98-6fb2b9ac45b0" Version="1.1" Url="https://qa-in-uk-eol-ct-qrysvc.digital-online.eurofins.local/feature-guidedordering/settings/configurations" ThinkTime="0" Timeout="60" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Origin" Value="https://qa-in-uk-guided-ordering.digital-online.eurofins.local" />
+        <Header Name="Sec-Fetch-Site" Value="same-site" />
+        <Header Name="Sec-Fetch-Mode" Value="cors" />
+        <Header Name="Sec-Fetch-Dest" Value="empty" />
+        <Header Name="Authorization" Value="Bearer {{BearerToken}}" />
+      </Headers>
+      <QueryStringParameters>
+        <QueryStringParameter Name="configurationKeys" Value="enableTodayAsDefaultValueForDateTime" RecordedValue="" CorrelationBinding="" UrlEncode="True" UseToGroupResults="False" />
+        <QueryStringParameter Name="configurationKeys" Value="PricingAtOrderingServiceLevel" RecordedValue="" CorrelationBinding="" UrlEncode="True" UseToGroupResults="False" />
+        <QueryStringParameter Name="configurationKeys" Value="enableShipping" RecordedValue="" CorrelationBinding="" UrlEncode="True" UseToGroupResults="False" />
+        <QueryStringParameter Name="configurationKeys" Value="EnableSmartLabelPrinting" RecordedValue="" CorrelationBinding="" UrlEncode="True" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="OPTIONS" Guid="a62591cf-22c6-42cd-a0b2-a66726191efa" Version="1.1" Url="https://qa-in-uk-user-mgmt-qrysvc.digital-online.eurofins.local/feature-guidedordering/users/me/profile" ThinkTime="0" Timeout="60" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Access-Control-Request-Method" Value="GET" />
+        <Header Name="Access-Control-Request-Headers" Value="authorization" />
+        <Header Name="Origin" Value="https://qa-in-uk-guided-ordering.digital-online.eurofins.local" />
+        <Header Name="Sec-Fetch-Mode" Value="cors" />
+        <Header Name="Sec-Fetch-Site" Value="same-site" />
+        <Header Name="Sec-Fetch-Dest" Value="empty" />
+      </Headers>
+    </Request>
+    <Request Method="GET" Guid="9e5008d6-c656-45c2-a587-17d678ed157d" Version="1.1" Url="https://qa-in-uk-user-mgmt-qrysvc.digital-online.eurofins.local/feature-guidedordering/users/me/profile" ThinkTime="0" Timeout="60" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Origin" Value="https://qa-in-uk-guided-ordering.digital-online.eurofins.local" />
+        <Header Name="Sec-Fetch-Site" Value="same-site" />
+        <Header Name="Sec-Fetch-Mode" Value="cors" />
+        <Header Name="Sec-Fetch-Dest" Value="empty" />
+        <Header Name="Authorization" Value="Bearer {{BearerToken}}" />
+      </Headers>
+    </Request>
+    <Request Method="OPTIONS" Guid="1cdf7226-7136-4699-b0d6-9ca4c2772dd3" Version="1.1" Url="https://qa-in-uk-user-mgmt-qrysvc.digital-online.eurofins.local/feature-guidedordering/users/me/eurofinsLegalEntities" ThinkTime="0" Timeout="60" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Access-Control-Request-Method" Value="GET" />
+        <Header Name="Access-Control-Request-Headers" Value="authorization" />
+        <Header Name="Origin" Value="https://qa-in-uk-guided-ordering.digital-online.eurofins.local" />
+        <Header Name="Sec-Fetch-Mode" Value="cors" />
+        <Header Name="Sec-Fetch-Site" Value="same-site" />
+        <Header Name="Sec-Fetch-Dest" Value="empty" />
+      </Headers>
+    </Request>
+    <Request Method="GET" Guid="e5b378a6-0c81-440d-b5d0-e0a01dc45b3e" Version="1.1" Url="https://qa-in-uk-user-mgmt-qrysvc.digital-online.eurofins.local/feature-guidedordering/users/me/eurofinsLegalEntities" ThinkTime="0" Timeout="60" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Origin" Value="https://qa-in-uk-guided-ordering.digital-online.eurofins.local" />
+        <Header Name="Sec-Fetch-Site" Value="same-site" />
+        <Header Name="Sec-Fetch-Mode" Value="cors" />
+        <Header Name="Sec-Fetch-Dest" Value="empty" />
+        <Header Name="Authorization" Value="Bearer {{BearerToken}}" />
+      </Headers>
+    </Request>
+    <Request Method="OPTIONS" Guid="544ea1e3-f1eb-4867-98ef-2681e5b95d55" Version="1.1" Url="https://qa-in-uk-user-mgmt-qrysvc.digital-online.eurofins.local/feature-guidedordering/applications/EOL/users/me/operations" ThinkTime="0" Timeout="60" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Access-Control-Request-Method" Value="GET" />
+        <Header Name="Access-Control-Request-Headers" Value="authorization" />
+        <Header Name="Origin" Value="https://qa-in-uk-guided-ordering.digital-online.eurofins.local" />
+        <Header Name="Sec-Fetch-Mode" Value="cors" />
+        <Header Name="Sec-Fetch-Site" Value="same-site" />
+        <Header Name="Sec-Fetch-Dest" Value="empty" />
+      </Headers>
+    </Request>
+    <Request Method="GET" Guid="711d8845-7cf9-4074-9261-493b73e0597d" Version="1.1" Url="https://qa-in-uk-user-mgmt-qrysvc.digital-online.eurofins.local/feature-guidedordering/applications/EOL/users/me/operations" ThinkTime="0" Timeout="60" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Origin" Value="https://qa-in-uk-guided-ordering.digital-online.eurofins.local" />
+        <Header Name="Sec-Fetch-Site" Value="same-site" />
+        <Header Name="Sec-Fetch-Mode" Value="cors" />
+        <Header Name="Sec-Fetch-Dest" Value="empty" />
+        <Header Name="Authorization" Value="Bearer {{BearerToken}}" />
+      </Headers>
+    </Request>
+    <Request Method="OPTIONS" Guid="c515b014-23a9-4643-9b24-bdfb5734de0a" Version="1.1" Url="https://qa-in-uk-order-qrysvc.digital-online.eurofins.local/feature-guidedordering/orders/submitted" ThinkTime="0" Timeout="60" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Access-Control-Request-Method" Value="GET" />
+        <Header Name="Access-Control-Request-Headers" Value="authorization" />
+        <Header Name="Origin" Value="https://qa-in-uk-guided-ordering.digital-online.eurofins.local" />
+        <Header Name="Sec-Fetch-Mode" Value="cors" />
+        <Header Name="Sec-Fetch-Site" Value="same-site" />
+        <Header Name="Sec-Fetch-Dest" Value="empty" />
+      </Headers>
+      <QueryStringParameters>
+        <QueryStringParameter Name="sortColumn" Value="orderPlacedOn" RecordedValue="" CorrelationBinding="" UrlEncode="True" UseToGroupResults="False" />
+        <QueryStringParameter Name="pageNumber" Value="1" RecordedValue="" CorrelationBinding="" UrlEncode="True" UseToGroupResults="False" />
+        <QueryStringParameter Name="pageSize" Value="10" RecordedValue="" CorrelationBinding="" UrlEncode="True" UseToGroupResults="False" />
+        <QueryStringParameter Name="searchTerm" Value="" RecordedValue="" CorrelationBinding="" UrlEncode="True" UseToGroupResults="False" />
+        <QueryStringParameter Name="sortDirection" Value="1" RecordedValue="" CorrelationBinding="" UrlEncode="True" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="ce0d9ace-9cbf-41ae-8115-6ba2d615f259" Version="1.1" Url="https://qa-in-uk-order-qrysvc.digital-online.eurofins.local/feature-guidedordering/orders/submitted" ThinkTime="0" Timeout="60" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Origin" Value="https://qa-in-uk-guided-ordering.digital-online.eurofins.local" />
+        <Header Name="Sec-Fetch-Site" Value="same-site" />
+        <Header Name="Sec-Fetch-Mode" Value="cors" />
+        <Header Name="Sec-Fetch-Dest" Value="empty" />
+        <Header Name="Authorization" Value="Bearer {{BearerToken}}" />
+      </Headers>
+      <QueryStringParameters>
+        <QueryStringParameter Name="sortColumn" Value="orderPlacedOn" RecordedValue="" CorrelationBinding="" UrlEncode="True" UseToGroupResults="False" />
+        <QueryStringParameter Name="pageNumber" Value="1" RecordedValue="" CorrelationBinding="" UrlEncode="True" UseToGroupResults="False" />
+        <QueryStringParameter Name="pageSize" Value="10" RecordedValue="" CorrelationBinding="" UrlEncode="True" UseToGroupResults="False" />
+        <QueryStringParameter Name="searchTerm" Value="" RecordedValue="" CorrelationBinding="" UrlEncode="True" UseToGroupResults="False" />
+        <QueryStringParameter Name="sortDirection" Value="1" RecordedValue="" CorrelationBinding="" UrlEncode="True" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="OPTIONS" Guid="c796e563-69ca-41a0-b5bf-fd1841ae89b0" Version="1.1" Url="https://qa-in-uk-user-mgmt-qrysvc.digital-online.eurofins.local/feature-guidedordering/accounts" ThinkTime="0" Timeout="60" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Access-Control-Request-Method" Value="GET" />
+        <Header Name="Access-Control-Request-Headers" Value="authorization" />
+        <Header Name="Origin" Value="https://qa-in-uk-guided-ordering.digital-online.eurofins.local" />
+        <Header Name="Sec-Fetch-Mode" Value="cors" />
+        <Header Name="Sec-Fetch-Site" Value="same-site" />
+        <Header Name="Sec-Fetch-Dest" Value="empty" />
+      </Headers>
+      <QueryStringParameters>
+        <QueryStringParameter Name="accountCodes" Value="A00246287DTH" RecordedValue="" CorrelationBinding="" UrlEncode="True" UseToGroupResults="False" />
+        <QueryStringParameter Name="accountCodes" Value="A00243270FEM" RecordedValue="" CorrelationBinding="" UrlEncode="True" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="84c63a77-459f-4ec9-8561-5d1b2da56f43" Version="1.1" Url="https://qa-in-uk-user-mgmt-qrysvc.digital-online.eurofins.local/feature-guidedordering/accounts" ThinkTime="7" Timeout="60" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Origin" Value="https://qa-in-uk-guided-ordering.digital-online.eurofins.local" />
+        <Header Name="Sec-Fetch-Site" Value="same-site" />
+        <Header Name="Sec-Fetch-Mode" Value="cors" />
+        <Header Name="Sec-Fetch-Dest" Value="empty" />
+        <Header Name="Authorization" Value="Bearer {{BearerToken}}" />
+      </Headers>
+      <QueryStringParameters>
+        <QueryStringParameter Name="accountCodes" Value="A00246287DTH" RecordedValue="" CorrelationBinding="" UrlEncode="True" UseToGroupResults="False" />
+        <QueryStringParameter Name="accountCodes" Value="A00243270FEM" RecordedValue="" CorrelationBinding="" UrlEncode="True" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="OPTIONS" Guid="71dae51e-7a5a-4803-bc14-ff0badd4fcfb" Version="1.1" Url="https://qa-in-uk-user-mgmt-qrysvc.digital-online.eurofins.local/feature-guidedordering/accounts/search" ThinkTime="0" Timeout="60" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Access-Control-Request-Method" Value="GET" />
+        <Header Name="Access-Control-Request-Headers" Value="authorization" />
+        <Header Name="Origin" Value="https://qa-in-uk-guided-ordering.digital-online.eurofins.local" />
+        <Header Name="Sec-Fetch-Mode" Value="cors" />
+        <Header Name="Sec-Fetch-Site" Value="same-site" />
+        <Header Name="Sec-Fetch-Dest" Value="empty" />
+      </Headers>
+      <QueryStringParameters>
+        <QueryStringParameter Name="sortColumn" Value="" RecordedValue="" CorrelationBinding="" UrlEncode="True" UseToGroupResults="False" />
+        <QueryStringParameter Name="sortDirection" Value="0" RecordedValue="" CorrelationBinding="" UrlEncode="True" UseToGroupResults="False" />
+        <QueryStringParameter Name="pageNumber" Value="1" RecordedValue="" CorrelationBinding="" UrlEncode="True" UseToGroupResults="False" />
+        <QueryStringParameter Name="recordsCount" Value="10" RecordedValue="" CorrelationBinding="" UrlEncode="True" UseToGroupResults="False" />
+        <QueryStringParameter Name="SearchText" Value="dth" RecordedValue="" CorrelationBinding="" UrlEncode="True" UseToGroupResults="False" />
+        <QueryStringParameter Name="pageSize" Value="10" RecordedValue="" CorrelationBinding="" UrlEncode="True" UseToGroupResults="False" />
+        <QueryStringParameter Name="eleCodes" Value="CUK003" RecordedValue="" CorrelationBinding="" UrlEncode="True" UseToGroupResults="False" />
+        <QueryStringParameter Name="eleCodes" Value="CUK004" RecordedValue="" CorrelationBinding="" UrlEncode="True" UseToGroupResults="False" />
+        <QueryStringParameter Name="eleCodes" Value="CUK009" RecordedValue="" CorrelationBinding="" UrlEncode="True" UseToGroupResults="False" />
+        <QueryStringParameter Name="eleCodes" Value="CUK010" RecordedValue="" CorrelationBinding="" UrlEncode="True" UseToGroupResults="False" />
+        <QueryStringParameter Name="eleCodes" Value="CUK017" RecordedValue="" CorrelationBinding="" UrlEncode="True" UseToGroupResults="False" />
+        <QueryStringParameter Name="eleCodes" Value="CUK018" RecordedValue="" CorrelationBinding="" UrlEncode="True" UseToGroupResults="False" />
+        <QueryStringParameter Name="eleCodes" Value="CUK020" RecordedValue="" CorrelationBinding="" UrlEncode="True" UseToGroupResults="False" />
+        <QueryStringParameter Name="eleCodes" Value="CUK024" RecordedValue="" CorrelationBinding="" UrlEncode="True" UseToGroupResults="False" />
+        <QueryStringParameter Name="eleCodes" Value="CUK026" RecordedValue="" CorrelationBinding="" UrlEncode="True" UseToGroupResults="False" />
+        <QueryStringParameter Name="eleCodes" Value="CUK027" RecordedValue="" CorrelationBinding="" UrlEncode="True" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="bd6f06b1-33ae-4843-bbde-06c5eaf41476" Version="1.1" Url="https://qa-in-uk-user-mgmt-qrysvc.digital-online.eurofins.local/feature-guidedordering/accounts/search" ThinkTime="2" Timeout="60" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Origin" Value="https://qa-in-uk-guided-ordering.digital-online.eurofins.local" />
+        <Header Name="Sec-Fetch-Site" Value="same-site" />
+        <Header Name="Sec-Fetch-Mode" Value="cors" />
+        <Header Name="Sec-Fetch-Dest" Value="empty" />
+        <Header Name="Authorization" Value="Bearer {{BearerToken}}" />
+      </Headers>
+      <QueryStringParameters>
+        <QueryStringParameter Name="sortColumn" Value="" RecordedValue="" CorrelationBinding="" UrlEncode="True" UseToGroupResults="False" />
+        <QueryStringParameter Name="sortDirection" Value="0" RecordedValue="" CorrelationBinding="" UrlEncode="True" UseToGroupResults="False" />
+        <QueryStringParameter Name="pageNumber" Value="1" RecordedValue="" CorrelationBinding="" UrlEncode="True" UseToGroupResults="False" />
+        <QueryStringParameter Name="recordsCount" Value="10" RecordedValue="" CorrelationBinding="" UrlEncode="True" UseToGroupResults="False" />
+        <QueryStringParameter Name="SearchText" Value="dth" RecordedValue="" CorrelationBinding="" UrlEncode="True" UseToGroupResults="False" />
+        <QueryStringParameter Name="pageSize" Value="10" RecordedValue="" CorrelationBinding="" UrlEncode="True" UseToGroupResults="False" />
+        <QueryStringParameter Name="eleCodes" Value="CUK003" RecordedValue="" CorrelationBinding="" UrlEncode="True" UseToGroupResults="False" />
+        <QueryStringParameter Name="eleCodes" Value="CUK004" RecordedValue="" CorrelationBinding="" UrlEncode="True" UseToGroupResults="False" />
+        <QueryStringParameter Name="eleCodes" Value="CUK009" RecordedValue="" CorrelationBinding="" UrlEncode="True" UseToGroupResults="False" />
+        <QueryStringParameter Name="eleCodes" Value="CUK010" RecordedValue="" CorrelationBinding="" UrlEncode="True" UseToGroupResults="False" />
+        <QueryStringParameter Name="eleCodes" Value="CUK017" RecordedValue="" CorrelationBinding="" UrlEncode="True" UseToGroupResults="False" />
+        <QueryStringParameter Name="eleCodes" Value="CUK018" RecordedValue="" CorrelationBinding="" UrlEncode="True" UseToGroupResults="False" />
+        <QueryStringParameter Name="eleCodes" Value="CUK020" RecordedValue="" CorrelationBinding="" UrlEncode="True" UseToGroupResults="False" />
+        <QueryStringParameter Name="eleCodes" Value="CUK024" RecordedValue="" CorrelationBinding="" UrlEncode="True" UseToGroupResults="False" />
+        <QueryStringParameter Name="eleCodes" Value="CUK026" RecordedValue="" CorrelationBinding="" UrlEncode="True" UseToGroupResults="False" />
+        <QueryStringParameter Name="eleCodes" Value="CUK027" RecordedValue="" CorrelationBinding="" UrlEncode="True" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="OPTIONS" Guid="c4b8b8f4-dfe6-453a-893e-955608b6cddc" Version="1.1" Url="https://qa-in-uk-eol-ct-qrysvc.digital-online.eurofins.local/feature-guidedordering/accounts/orderingServices" ThinkTime="0" Timeout="60" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Access-Control-Request-Method" Value="GET" />
+        <Header Name="Access-Control-Request-Headers" Value="authorization" />
+        <Header Name="Origin" Value="https://qa-in-uk-guided-ordering.digital-online.eurofins.local" />
+        <Header Name="Sec-Fetch-Mode" Value="cors" />
+        <Header Name="Sec-Fetch-Site" Value="same-site" />
+        <Header Name="Sec-Fetch-Dest" Value="empty" />
+      </Headers>
+      <QueryStringParameters>
+        <QueryStringParameter Name="accountCodes" Value="A00246287DTH" RecordedValue="" CorrelationBinding="" UrlEncode="True" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="13974b9b-92b3-42a2-a012-fd8c870c1d5b" Version="1.1" Url="https://qa-in-uk-eol-ct-qrysvc.digital-online.eurofins.local/feature-guidedordering/accounts/orderingServices" ThinkTime="0" Timeout="60" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Origin" Value="https://qa-in-uk-guided-ordering.digital-online.eurofins.local" />
+        <Header Name="Sec-Fetch-Site" Value="same-site" />
+        <Header Name="Sec-Fetch-Mode" Value="cors" />
+        <Header Name="Sec-Fetch-Dest" Value="empty" />
+        <Header Name="Authorization" Value="Bearer {{BearerToken}}" />
+      </Headers>
+      <QueryStringParameters>
+        <QueryStringParameter Name="accountCodes" Value="A00246287DTH" RecordedValue="" CorrelationBinding="" UrlEncode="True" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+  </Items>
+</WebTest>
